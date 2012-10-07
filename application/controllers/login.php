@@ -2,7 +2,7 @@
    
      class Login extends CI_Controller 
 	 {
-		   public $sess_vars;
+		 
 		    function index()
 			{
 				  $data['main_content']='login_form';//This statement will call login_form.php file in template file.
@@ -15,7 +15,7 @@
 					$q=$this->login_model->validate(); 
 					if($q)
 					{
-						$this->sess_vars=$data=array('username'=>$this->input->post('username'), 
+					     $data=array('username'=>$this->input->post('username'), 
 						'is_logged_in'=>true);
 						$this->session->set_userdata($data); 
 						redirect(base_url().'login/members_page'); //redirecting members_page function. 
