@@ -21,9 +21,7 @@
 						redirect(base_url().'login/members_page'); //redirecting members_page function. 
 					}
 					else
-					  {
-						 $this->index(); 
-					  }
+					  $this->index();
 					  }
 			  
 			  function sign_up()
@@ -52,9 +50,8 @@
 								$this->load->view('template',$data); 
 						   }
 						   else
-						     {
-								   $this->create_account(); 
-							 }
+						     $this->create_account(); 
+						
 						   
 					   }
 			  }
