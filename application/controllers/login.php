@@ -1,12 +1,13 @@
 ﻿<?php 
-   
+
+    //some comment repo!!!
      class Login extends CI_Controller 
 	 {
 		 
 		    function index()
 			{
 				  $data['main_content']='login_form';//This statement will call login_form.php file in template file.
-				  $this->load->view('template',$data); //We're loading template view page.
+				  $this->load->view('template',$data); //Loading template view page.
 			}
 			
 			  function sign_in()
